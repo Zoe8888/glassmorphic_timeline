@@ -22,7 +22,7 @@ body {
 h1 {
   text-transform: uppercase;
   color: white;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .timeline-container {
@@ -83,14 +83,17 @@ h1 {
   color: white;
   text-shadow: 3px 3px 3px black;
 }
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .timeline-container {
-    grid-template-column: 10% 1fr;
+    grid-template-columns: 10% 1fr;
   }
   .line {
     grid-column-start: 1;
   }
-  .timeline-item {
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
     grid-column: 2;
   }
 }
